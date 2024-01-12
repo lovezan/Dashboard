@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Work+Sans:wght@100"500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <section id="icon-section">
+        <div class="iconbars">
+          <div class="top">
+            <img src="./img/logo.png" alt="Image " />
+            <a>
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="middle">
+            <a>
+              <i class="fas fa-home"></i>
+            </a>
+            <a>
+              <i class="far fa-newspaper"></i>
+            </a>
+            <a>
+              <i class="fa-solid fa-list-check"></i>
+            </a>
+            <a>
+              <i class="far fa-user"></i>
+            </a>
+          </div>
+          <div class="bottom">
+            <a>
+              <i class="fa-regular fa-bell"></i>
+            </a>
+            <a>
+              <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="left-section">
+        <div class="left-all">
+        <div class="user-info">
+          <div class="image">
+            <img src="./img/cat.jpg" alt="User Image" />
+          </div>
+          <div class="user-text">
+            <h2>Hi Mike,</h2>
+            <p>Welcome back.</p>
+          </div>
+        </div>
+        <div class="account-section">
+          <div class="today">Today</div>
+          <div class="grid-here">
+
+            <div class="balance" id="balance">
+              <h1 class="amount">
+                <span><i class="fa-solid fa-dollar-sign"></i></span>19,892
+              </h1>
+              <div class="text">Account Balance</div>
+            </div>
+            <div class="contribution">
+            <h2 class="amount">
+              <span><i class="fa-solid fa-dollar-sign"></i></span>4,000
+            </h2>
+            <div class="text" id="dynamicText">Year-to-Date Contributions</div>
+          </div>
+          <div class="total-interest">
+            <h2 class="amount">
+              <span><i class="fa-solid fa-dollar-sign"></i></span>1,892
+            </h2>
+            <div class="text">Total Interest</div>
+          </div>
+          
+        </div>
+          <button class="deposit-btn">I want to <i class="fa fa-caret-down"></i></button>
+        </div>
+
+        <div class="transaction">
+          <div class="title">
+            <div>Recent Transactions</div>
+          </div>
+          <div class="all">
+            <div class="date">2020-08-07</div>
+            <div class="withdrawal">Withdrawal Transfer to bank-XXX11</div>
+
+            <hr />
+          </div>
+          <div class="all">
+            <div class="date">2020-07-21</div>
+            <div class="withdrawal">Withdrawal Transfer to bank-XXX11</div>
+            <hr />
+          </div>
+          <div class="all">
+            <div class="date">2020-07-06</div>
+            <div class="withdrawal">Withdrawal Transfer to bank-XXX11</div>
+
+            <hr />
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="center-section">
+       <div class="center-all"> 
+        <div class="starting">
+        <div class="income">
+          Retirment Income
+        </div>
+        <div class="year">
+          Starting Year 2056
+        </div>
+      </div>
+      <div class="Starting2">
+        <div class="goal">
+          <div class="number">
+            <span><i class="fa-solid fa-dollar-sign"></i>300,000</span>
+          </div>
+          <div class="text">My Goal</div>
+          <hr>
+        </div>
+        <div class="percent">
+
+          <div class="number">
+            <span class="data-progress" data-value="59"> </span>
+          </div>
+          <div class="text">Goal Acheived</div>
+          <hr>
+        </div>
+        <div class="income">
+          <div class="number">
+            <span><i class="fa-solid fa-dollar-sign"></i>300</span>
+          </div>
+          <div class="text">
+            Est. Monthly Income
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="overtime">
+        <div class="title">
+          Contributions Overtime
+        </div>
+        <div class="employes">
+          <div class="text" id="employer">
+            <i class="fa-solid fa-circle"></i> <div> Employer:</div> <span>K 73,500</span>
+          </div>
+          <div class="text" id="employee">
+            <i class="fa-solid fa-circle"></i> <div>Employee:</div> <span>K 52,500</span>
+          </div>
+          <div class="text">
+            <i class="fa-solid fa-circle"></i> <div>Total Interest:</div>  <span>K 244,313</span>
+          </div>
+        </div>
+        <div class="bargraph">
+          <div class="left">
+            <div class="rows"><i class="fa-solid fa-dollar-sign"></i>300 </div>
+            
+            <div class="rows" id="midrow"><i class="fa-solid fa-dollar-sign"></i>200</div>
+            
+            <div class="rows"  id="midrow"><i class="fa-solid fa-dollar-sign"></i>100</div>
+            
+            <div class="rows" id="midrow"><i class="fa-solid fa-dollar-sign"></i>0</div>
+           
+          </div>
+          <div class="content" id="content1">
+            <div class="chart" id="chart1">
+              <div class="bar">
+                  <span class="provider" id="20" data-value="20" data-stroke="#8176f4" data-time="20"></span>
+                 
+              </div>
+              <div class="bar">
+                  <span class="provider" id="22" data-value="22" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="25" data-value="25" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="27" data-value="32" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="30" data-value="38" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="33" data-value="46" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="35" data-value="53" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="38" data-value="58" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="40" data-value="62" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="80" data-value="65" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="60" data-value="70" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="63" data-value="75" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="65" data-value="80" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+      
+            </div>
+            <div class="chart" id="chart2">
+              <div class="bar">
+                  <span class="provider" id="20" data-value="20" data-stroke="#3f2fed" data-time="20"></span>
+                 
+              </div>
+              <div class="bar">
+                  <span class="provider" id="22" data-value="22" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="25" data-value="24" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="27" data-value="26" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="30" data-value="28" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="33" data-value="30" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="35" data-value="32" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="38" data-value="34" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="40" data-value="36" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="80" data-value="39" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="60" data-value="42" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="63" data-value="45" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="65" data-value="48" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+      
+            </div>
+            <div class="chart" id="chart3">
+              <div class="bar">
+                  <span class="provider" id="20" data-value="10" data-stroke="#10048b" data-time="90"></span>
+                 
+              </div>
+              <div class="bar">
+                  <span class="provider" id="22" data-value="12" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="25" data-value="14" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="27" data-value="16" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="30" data-value="18" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="33" data-value="20" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="35" data-value="22" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="38" data-value="24" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="40" data-value="26" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="80" data-value="28" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="60" data-value="30" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="63" data-value="32" data-stroke="#10048b" data-time="90"></span>
+              </div>
+              <div class="bar">
+                  <span class="provider" id="65" data-value="34" data-stroke="#10048b" data-time="90"></span>
+              </div>
+      
+            </div>
+            <div class="range">
+              <div class="num">20</div>
+              <div class="num">25</div>
+              <div class="num">30</div>
+              <div class="num">35</div>
+              <div class="num">40</div>
+              <div class="num">60</div>
+              <div class="num">65</div>
+            </div>
+          </div>
+          <div class="content" id="content2">
+            <div class="chart" id="chart1">
+              <div class="bar">
+                  <span class="provider" id="20" data-value="20" data-stroke="#8176f4" data-time="20"></span>
+                 
+              </div>
+            
+              <div class="bar">
+                  <span class="provider" id="25" data-value="25" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+          
+              <div class="bar">
+                  <span class="provider" id="30" data-value="38" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+            
+              <div class="bar">
+                  <span class="provider" id="35" data-value="53" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+            
+              <div class="bar">
+                  <span class="provider" id="40" data-value="62" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+             
+              <div class="bar">
+                  <span class="provider" id="60" data-value="70" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+              
+              <div class="bar">
+                  <span class="provider" id="76" data-value="80" data-stroke="#8176f4" data-time="90"></span>
+              </div>
+      
+            </div>
+            <div class="chart" id="chart2">
+              <div class="bar">
+                  <span class="provider" id="20" data-value="15" data-stroke="#3f2fed" data-time="20"></span>
+                 
+              </div>
+             
+              <div class="bar">
+                  <span class="provider" id="25" data-value="20" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+            
+              <div class="bar">
+                  <span class="provider" id="30" data-value="28" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+             
+              <div class="bar">
+                  <span class="provider" id="35" data-value="32" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+             
+              <div class="bar">
+                  <span class="provider" id="40" data-value="36" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+             
+              <div class="bar">
+                  <span class="provider" id="60" data-value="42" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+           
+              <div class="bar">
+                  <span class="provider" id="65" data-value="48" data-stroke="#3f2fed" data-time="90"></span>
+              </div>
+      
+            </div>
+            <div class="chart" id="chart3">
+              <div class="bar">
+                  <span class="provider" id="20" data-value="8" data-stroke="#10048b" data-time="90"></span>
+                 
+              </div>
+           
+              <div class="bar">
+                  <span class="provider" id="25" data-value="12" data-stroke="#10048b" data-time="90"></span>
+              </div>
+            
+              <div class="bar">
+                  <span class="provider" id="30" data-value="18" data-stroke="#10048b" data-time="90"></span>
+              </div>
+            
+              <div class="bar">
+                  <span class="provider" id="35" data-value="22" data-stroke="#10048b" data-time="90"></span>
+              </div>
+           
+              <div class="bar">
+                  <span class="provider" id="40" data-value="26" data-stroke="#10048b" data-time="90"></span>
+              </div>
+             
+              <div class="bar">
+                  <span class="provider" id="60" data-value="30" data-stroke="#10048b" data-time="90"></span>
+              </div>
+           
+              <div class="bar">
+                  <span class="provider" id="65" data-value="34" data-stroke="#10048b" data-time="90"></span>
+              </div>
+      
+            </div>
+            <div class="range">
+              <div class="num">20</div>
+              <div class="num">25</div>
+              <div class="num">30</div>
+              <div class="num">35</div>
+              <div class="num">40</div>
+              <div class="num">60</div>
+              <div class="num">65</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="compare">
+       <div class="top">
+
+         <div class="title">
+           How do I compare to my peers ?
+         </div>
+         <div class="title1">
+           There numbers repersent surrent goal achivment
+         </div>
+       </div> 
+
+        <div class="both">
+          <div class="left">
+            <div id="age" class="left-part">
+              Age: <span>Under"50 <i class="fa fa-caret-down"></i></span>
+            </div>
+            <hr>
+            <div id="salary" class="left-part">
+              Salary: <span>K 20 - K"50 <i class="fa fa-caret-down"></i></span>
+            </div>
+            <hr>
+            <div id="gender" class="left-part">
+              Gender: <span>Male <i class="fa fa-caret-down"></i></span>
+            </div>
+
+          </div>
+          <div class="right">
+           
+           
+              <div class="progress_container">
+              
+                  <div class="skill">
+                    <svg>
+                      <circle cx="70" cy="70" r="40" class="only" ></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="70" data-stroke="#3f2fed" data-time="100"></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="65" data-stroke="#6a38f1" data-time="100"></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="50" data-stroke="#00c5ea" data-time="100"></circle>
+                    </svg>
+                    <span class="data-progress" data-value="90"></span>
+                    <div class="text" id="average">Average</div>
+                  </div>
+              
+                
+                  <div class="skill" id="middle">
+                    <svg>
+                      <circle cx="70" cy="70" r="40"  class="only" data-stroke="#81D081"  ></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="75" data-stroke="#6352d3" data-time="100"></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="65" data-stroke="#3f2fed" data-time="100"></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="50" data-stroke="#1ba0fb" data-time="100"></circle>
+                    </svg>
+                    <span class="data-progress" data-value="95"></span>
+                    <div class="text" id="top">Top</div>
+
+                  </div>
+             
+               
+                  <div class="skill">
+                    <svg>
+                      <circle cx="70" cy="70" r="40"  class="only"></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="50" data-stroke="#ff7741" data-time="100"></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="45" data-stroke="#c11c92" data-time="100"></circle>
+                      <circle cx="70" cy="70" r="50" class="progress" data-value="30" data-stroke="#7201d7" data-time="100"></circle>
+                    </svg>
+                    <span class="data-progress" data-value="59"> </span>
+                    <div class="text" id="me">Me</div>
+                  </div>
+                
+              </div>
+              
+          
+              
+            </div>
+           
+            
+          </div>
+        </div>
+      </div>
+
+      </section>
+      <section id="right-section">
+   <div class="right-all">
+    <div class="bothhere" id="bothhere"></div>
+    <div class="strategy">
+      <h2>Retirement Stategy</h2>
+
+    <div class="employee">
+        <label for="employeeInput">Employee Contribution</label>
+    </div>
+
+    <div class="input">
+        <input type="range" min="1" max="20" value="5" id="employeeInput" class="slider">
+        
+        <span id="percentage">12%</span>
+    </div>
+
+    <div class="age">
+        <label for="ageInput">Retirement Age</label>
+    </div>
+
+    <div class="input">
+        <input type="range" min="1" max="100" value="5" id="ageInput" class="slider">
+        <span id="percentage">65</span>
+    </div>
+
+    <hr>
+
+    <div class="contribution">
+        <div class="employer">
+           <div class="text">Employer Contribution</div>
+           <div class="per">8.4%</div>
+        </div>
+        <div class="rate">
+            <div class="text">Interest Rate</div>
+            <div class="per">5%</div>
+        </div>
+    </div>
+
+    <button class="Update"><p>Update</p></button>
+
+  <div class="view">
+    <div>view Help Docs <i class="fa-solid fa-angle-right"></i></div>
+  </div>
+    </div>
+  <div class="last-div">
+    <div class="line"><p>hi</p></div>
+    <div class="content">
+      <div class="h1">Are you cosidering a</div>
+      <div class="h2">Housing Advance?</div>
+      <div class="h3">Limited time reduced intrest.</div>
+      <div class="last">
+        learn More <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+  </div>
+   </div>
+      </section>
+
+      <div class="navbar">
+        <div class="navbaricon">
+         
+           
+          </div>
+          <div class="middle" id="Tabs">
+            <a id="home">
+              <i class="fas fa-home"></i>
+            </a>
+            <a id="Dash">
+              <i class="far fa-newspaper"></i>
+            </a>
+            <a id="static">
+              <i class="fa-solid fa-list-check"></i>
+            </a>
+            <a id="profile">
+              <i class="far fa-user"></i>
+            </a>
+            <a id="search">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bellicon" id="bellIcon">
+        <a>
+          <i class="fa-regular fa-bell"></i>
+        </a>
+      </div>
+      <div class="cross" id="crossIcon" style="display: none;">
+        <a>
+          <i class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+    </div>
+
+     <script src="script.js"></script>
+     
+  </body>
+</html>
