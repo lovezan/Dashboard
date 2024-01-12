@@ -329,7 +329,9 @@ body {
 }
 
 /* end of left section */
-
+.employes .text{
+  display: flex;
+}
 /* chart Transparency */
 
 #chart2 {
