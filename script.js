@@ -186,7 +186,8 @@ document.getElementById('profile').addEventListener('click', () => showSection(l
     showCrossIcon();
     hideTabsElement();
     addCrossAnimation(); // Call the animation function
-    showBothhere()
+    showBothhere();
+    changeStyles();
 
     
   });
@@ -270,12 +271,30 @@ function updateCircleAttributes() {
   const newCx = screenWidth <= 768 ? 44 :70;
   const newCy = screenWidth <= 768 ? 52 : 70;
   const newR = screenWidth <= 768 ? 40 : 50;
+  const phoneCx = screenWidth <= 320 ? 34 :70;
+  const phonedCy = screenWidth <= 320 ? 42 : 70;
+  const phoneR = screenWidth <= 320 ? 30 : 50;
+  const phone1Cx = screenWidth <= 480 ? 44 :70;
+  const phone1dCy = screenWidth <= 480 ? 52 : 70;
+  const phone1R = screenWidth <= 480 ? 40 : 50;
+  const phone2Cx = screenWidth <= 480 ? 34 :70;
+  const phone2dCy = screenWidth <= 480 ? 42 : 70;
+  const phone2R = screenWidth <= 480 ? 30 : 50;
 
   // Update attributes for each circle
   circles.forEach(circle => {
     circle.setAttribute('cx', newCx);
     circle.setAttribute('cy', newCy);
     circle.setAttribute('r', newR);
+    circle.setAttribute('cx', phoneCx);
+    circle.setAttribute('cy', phonedCy);
+    circle.setAttribute('r', phoneR);
+    circle.setAttribute('cx', phone1Cx);
+    circle.setAttribute('cy', phone1dCy);
+    circle.setAttribute('r', phone1R);
+    circle.setAttribute('cx', phone2Cx);
+    circle.setAttribute('cy', phone2dCy);
+    circle.setAttribute('r', phone2R);
   });
 }
 
@@ -293,3 +312,119 @@ document.addEventListener('DOMContentLoaded', function () {
   // Set the content to the element with id "bothhere"
   document.getElementById('bothhere').innerHTML = bothContent;
 });
+
+
+
+/*
+hello
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+*/
+
+// function changeStyles() {
+//   // Modify styles for .top .title1
+//   document.querySelector('.top .title1').style.fontSize = '11px';
+
+//   // Modify styles for .top .title
+//   document.querySelector('.top .title').style.fontSize = '15px';
+
+//   // Modify styles for .top
+//   document.querySelector('.top').style.marginTop = '34px';
+//   document.querySelector('.top').style.marginBottom = '0px';
+
+//   // Modify styles for .both .left #age
+//   document.querySelector('.both .left #age').style.marginBottom = '10px';
+//   document.querySelector('.both .left #age').style.marginTop = '10px';
+//   document.querySelector('.both .left #age').style.fontSize = '13px';
+
+//   // Modify styles for .both .left #salary
+//   document.querySelector('.both .left #salary').style.marginBottom = '10px';
+//   document.querySelector('.both .left #salary').style.marginTop = '10px';
+//   document.querySelector('.both .left #salary').style.fontSize = '13px';
+
+//   // Modify styles for .both .left #gender
+//   document.querySelector('.both .left #gender').style.marginBottom = '10px';
+//   document.querySelector('.both .left #gender').style.marginTop = '10px';
+//   document.querySelector('.both .left #gender').style.fontSize = '13px';
+
+//   // Modify styles for .skill
+//   document.querySelector('.skill').style.position = 'relative';
+//   document.querySelector('.skill').style.height = '130px';
+//   document.querySelector('.skill').style.width = '70px';
+
+//   // Modify styles for .strategy
+//   document.querySelector('.strategy').style.display = 'flex';
+//   document.querySelector('.strategy').style.flexDirection = 'column';
+//   document.querySelector('.strategy').style.marginTop = '22px';
+
+//   // Modify styles for .strategy h2
+//   document.querySelector('.strategy h2').style.fontSize = '18px';
+
+//   // Modify styles for .strategy .employee
+//   document.querySelector('.strategy .employee').style.marginTop = '20px';
+//   document.querySelector('.strategy .employee').style.fontWeight = 'bolder';
+//   document.querySelector('.strategy .employee').style.fontSize = '12px';
+
+//   // Modify styles for .input
+//   document.querySelector('.input').style.justifyContent = 'center';
+//   document.querySelector('.input').style.marginTop = '0px';
+
+//   // Modify styles for .slider
+//   document.querySelector('.slider').style.width = '67%';
+//   document.querySelector('.slider').style.marginBottom = '8px';
+//   document.querySelector('.slider').style.backgroundColor = '#b9b9b9';
+//   document.querySelector('.slider').style.height = '3px';
+
+//   // Modify styles for .input span
+//   document.querySelector('.input span').style.fontWeight = 'bold';
+//   document.querySelector('.input span').style.fontSize = '13px';
+//   document.querySelector('.input span').style.marginLeft = '23px';
+
+//   // Modify styles for age
+//   document.querySelector('age').style.marginTop = '11px';
+//   document.querySelector('age').style.fontWeight = 'bold';
+//   document.querySelector('age').style.fontSize = '13px';
+
+//   // Modify styles for .contribution .rate .text
+//   document.querySelector('.contribution .rate .text').style.marginRight = '156px';
+//   document.querySelector('.contribution .rate .text').style.fontWeight = 'bold';
+//   document.querySelector('.contribution .rate .text').style.fontSize = '13px';
+
+//   // Modify styles for .contribution .employer .text
+//   document.querySelector('.contribution .employer .text').style.marginRight = '107px';
+//   document.querySelector('.contribution .employer .text').style.fontWeight = 'bold';
+//   document.querySelector('.contribution .employer .text').style.fontSize = '12px';
+
+//   // Modify styles for .contribution .employer .per
+//   document.querySelector('.contribution .employer .per').style.fontWeight = 'bold';
+//   document.querySelector('.contribution .employer .per').style.fontSize = '14px';
+
+//   // Modify styles for .contribution .rate .per
+//   document.querySelector('.contribution .rate .per').style.fontWeight = 'bold';
+//   document.querySelector('.contribution .rate .per').style.fontSize = '14px';
+
+//   // Modify styles for .container
+//   document.querySelector('.container').style.flexDirection = 'column';
+  
+//   // Modify styles for .strategy button
+//   const strategyButton = document.querySelector('.strategy button');
+//   strategyButton.style.borderRadius = '0px 0px 20px 20px';
+//   strategyButton.style.width = '317px';
+//   strategyButton.style.backgroundColor = 'rgb(64, 25, 235)';
+//   strategyButton.style.height = '60px';
+//   strategyButton.style.boxShadow = '0px -5px 10px rgba(0, 0, 0, 0.5)';
+//   strategyButton.style.transition = 'transform 0.3s ease';
+//   strategyButton.style.border = 'none';
+//   if (window.innerWidth <= 320) {
+//     // Modify styles accordingly for 320px viewport width
+//     document.querySelector('.top .title1').style.fontSize = '10px';
+//     document.querySelector('.top .title').style.fontSize = '13px';
+//     // Add more styles as needed
+// }
+// }
