@@ -73,7 +73,7 @@ body {
   transition: transform 0.5s ease; /* Added transition for smoother effect */
 }
 
-.iconbars .fa-bell:hover {
+.iconbars a .fa-bell:hover {
   animation: moveLeftRight 1s infinite; /* Apply the animation on hover */
 }
 
@@ -81,7 +81,7 @@ body {
   transition: transform 0.5s ease; /* Added transition for smoother effect */
 }
 
-.iconbars .fa-search:hover {
+.iconbars a .fa-search:hover {
   transform: rotate(360deg); /* Rotate 360 degrees on hover */
   transform-origin: bottom right; /* Set the transform origin to the bottom-right corner */
   color: black;
@@ -764,14 +764,26 @@ circle:nth-child(1) {
 .slider {
   width: 76%;
   margin-bottom: 20px;
-  /* pointer-events: none; */
-  background-color: #d6d3fd;
-  color: #000;
-  background-color: #00c5ea;
+  pointer-events: none;
+  background-color: #c0bed9;
+  /* color: #000; */
+  background-color: #b9b9b9;
 
-  /* height: 20px; */
+  /* -webkit-appearance: none;  */
+  height: 3px;
   /* height: 100px; */
 }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  width:20px;
+  height:20px;
+  background-color: #ffffff; 
+  border-radius: 50%; 
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); 
+  cursor: pointer;
+}
+
 input {
   font-weight: bold;
   cursor: pointer;
@@ -810,11 +822,11 @@ input {
   margin-right: 80px;
   /* justify-content: space-between; */
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 .contribution .employer .per {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
 }
 .contribution .rate {
   display: flex;
@@ -826,12 +838,12 @@ input {
   margin-right: 170px;
   font-weight: bold;
   /* justify-content: space-between; */
-  font-size: 18px;
+  font-size: 15px;
 }
 .contribution .rate .per {
   /* font-size: 10px; */
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .strategy button {
@@ -839,16 +851,19 @@ input {
   border-radius: 15px;
   background-color: rgb(64, 25, 235);
   height: 60px;
-
+  
   box-shadow: none;
   transition: transform 0.3s ease;
   border: none;
 }
 
 .strategy button:hover {
-  transform: translate(-10px, -10px);
-  background: linear-gradient(to bottom right, #a34beb, rgb(94, 52, 232));
-  animation: gradientAnimation 3s infinite; /* Added animation property for gradient animation */
+  /* background: linear-gradient(to bottom right, #a34beb, rgb(94, 52, 232)); */
+  background-color: rgb(64, 25, 235);
+  animation: gradientAnimation 3s infinite;
+
+  /* Added box shadow with the same color and blur */
+  box-shadow: 0 0 10px rgba(64, 25, 235, 0.7);
 }
 
 @keyframes gradientAnimation {
@@ -1467,7 +1482,7 @@ input {
     .skill .data-progress {
       position: absolute;
       color: black;
-      font-size: 1.5rem;
+      font-size: 1.0rem;
       font-weight: bold;
       left: 55%;
       top: 37%;
@@ -1475,7 +1490,7 @@ input {
     }
     svg {
       width: 6rem;
-      height: 6rem;
+      height: 5rem;
       transform: rotate(280deg);
       transform-origin: center;
     }
@@ -1505,7 +1520,7 @@ input {
       flex-direction: column;
       margin: 0;
       flex-wrap: wrap;
-      width: 308px;
+      width: 259px;
       align-content: space-between;
       align-items: stretch;
     }
@@ -2311,7 +2326,7 @@ animation: moveAndRotate 1s ease;
     flex-direction: column;
     margin: 0;
     flex-wrap: wrap;
-    width: 236px;
+    width: 211px;
     align-content: space-between;
     align-items: stretch;
   }
